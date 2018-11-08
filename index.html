@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+<body>
+    <div id="heading">
+
+        <h1>Rock, Paper, Scissors</h1>
+        <style>
+        .img {
+           position: fixed;
+           left: 0;
+           bottom: 0;
+           text-align: left;
+        }
+        </style>
+        <img src="img/Bowser.png" alt="Bowser" width="170" height="170"align="left">
+        <img src="img/RPS.png" alt="RPS" width="250" height="90"align="right">
+
+        <button id="show_name_button" class="header_button">Name</button>
+        <button id="show_rules_button" class="header_button">Rules</button>
+        <button id="show_results_button" class="header_button">Game Results</button>
+        <button id="show_stats_button" class="header_button">Stats</button>
+        <button id="clear_storage_button" class="header_button">Clear Local Storage</button>
+        <button id="show_feedback_button" class="header_button">Feedback</button>
+    </div>
+
+    <div id="feedback_div" class="visible body_div">
+        <h2>Feedback</h2>
+        <p id="feedback_text"></p>
+    </div>
+
+    <div id="rules_div" class="hidden body_div">
+        <h2>Rules</h2>
+        The game of Rock, paper, and scissors is based on trust, skill and determination.
+        Each player must:
+        <div id="rules_list_div">
+            <ul>
+                <li>Choose either rock, paper, or scissors.</li>
+                <li>The browser will also choose either rock, paper, or scissors.</li>
+                <li>If both you and the browser pick the same thing, you tie. </li>
+                <li>Rock beats scissors, paper beats rock, and scissors beats paper.</li>
+                <li>Click on the Stats button to check on how you match up.</li>
+
+            </ul>
+        </div>
+        <p>If you want to learn more, check out the official rock, paper, scissors organization
+        <a href="https://www.wrpsa.com/">by clicking here</a> </p>
+    </div>
+
+    <div id="stats_div" class="hidden body_div">
+        <h2 style="margin-bottom:0px">Stats</h2>
+        <p id="games_played"></p>
+
+        <div id="stats_container">
+            <div class="inner_stats_div">
+                <b>Player stats:</b>
+                <p id="player_paper_percentage"></p>
+                <p id="player_rock_percentage"></p>
+                <p id="player_scissors_percentage"></p>
+                <p id="player_wins"></p>
+                <p id="player_win_percentage"></p>
+            </div>
+            <div class="inner_stats_div">
+                <b>B(r)owser stats:</b>
+                <p id="browser_paper_percentage"></p>
+                <p id="browser_rock_percentage"></p>
+                <p id="browser_scissors_percentage"></p>
+                <p id="browser_wins"></p>
+                <p id="browser_win_percentage"></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="name_div" class="hidden body_div">
+        <h2>Name</h2>
+        <p>Please enter your name below:</p>
+        <input id="name_textfield" type="text" name="name">
+        <button id="name_button">Confirm</button>
+    </div>
+
+    <div id="play_div" class="visible body_div">
+        <h2>Play</h2>
+        <p> Are you up for the challenge, <span class="name_span"></span>?<br> Choose a move:</p>
+        <select id="player_choice_select">
+            <option value="">Choose move</option>
+            <option value="paper">Paper</option>
+            <option value="rock">Rock</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <button id="throw_choice_button">Submit</button>
+    </div>
+
+    <div id="results_div" class="hidden body_div">
+        <h2>Game Results:</h2>
+        <p id="throw_results_text"></p>
+
+        <div id="img_container_div">
+            <img src="" class="results_img" id="player_img">
+            <img src="" class="results_img" id="browser_img">
+        </div>
+
+
+        <button id="play_again_button">Play Again</button>
+        <button id="see_stats_button">See Stats</button>
+    </div>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #008CBA;
+   color: white;
+   text-align: center;
+}
+</style>
+
+<div id="footer_div" class="footer">
+  <p>This Project was made by Varun Khanna on November 8th, 2018</p>
+</div>
+
+</html>

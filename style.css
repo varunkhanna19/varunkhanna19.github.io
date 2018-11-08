@@ -1,0 +1,140 @@
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color:#565656;
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #3c4147;
+}
+
+
+
+button{
+border: none;
+color: white;
+padding: 5px 40px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 13px;
+margin: 4px 2px;
+cursor: pointer;
+-webkit-transition-duration: 0.4s; /* Safari */
+transition-duration: 0.4s;
+background-color: #008CBA;
+border-radius: 4px;
+}
+button:hover {
+    background-color: #b3f0ff; /* Green */
+    color: white;
+}
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+.hidden{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+h1 {
+    background-color: #93989e;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+#heading {
+    margin: 0;
+    text-align: center;
+    background-color: #93989e;
+    padding-bottom: 5px;
+}
+.header_button {
+    display: inline-block;
+    border: none;
+    color: white;
+    padding: .8rem 1rem;
+    margin: 0;
+    text-decoration: none;
+    background: #4483ce;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+
+.header_button:hover {
+    background: #b3f0ff;
+}
+
+.header_button:focus {
+    outline-offset: -4px;
+}
+
+.header_button:active {
+    transform: scale(0.98);
+}
+h2 {
+    margin-bottom: 10px;
+}
+#stats_div {
+    text-align: left;
+}
+#stats_container {
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+
+.body_div {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20%;
+    margin-left: 20%;
+    background-color: #8299b7;
+}
+
+.inner_stats_div {
+    width: 70%;
+}
+
+#games_played {
+    margin-bottom: 10px;
+}
+
+#player_choice_select {
+    margin-top: 10px;
+}
+
+#name_textfield {
+    margin-top: 10px;
+}
+
+#play_again_button {
+    margin-top: 10px;
+}
+
+
+.results_img {
+    width: 30%;
+}
+
+#rules_list_div {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
